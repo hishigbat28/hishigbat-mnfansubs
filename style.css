@@ -1,0 +1,409 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* html {
+  scroll-behavior: smooth;
+} */
+body {
+  background-color: #1d1d1d;
+}
+.hamgiindeer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.hamgiindeer .darah {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.hamgiindeer .bichig {
+  width: 200px;
+  height: fit-content;
+  color: white;
+  text-align: center;
+  display: none;
+}
+#check5 {
+  display: none;
+}
+.hamgiindeer #check5:checked ~ .bichig {
+  display: block;
+}
+header {
+  width: 100%;
+  height: 61px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+}
+header .logo {
+  width: 15%;
+  height: 100%;
+}
+header .menu {
+  width: 13%;
+  height: 100%;
+  display: flex;
+}
+header .logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+header .menu .item {
+  width: 33.3%;
+  height: 100%;
+  border-left: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+header .menu .item .drop {
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  background-color: aqua;
+  top: 61px;
+  right: 65px;
+  /* display: none; */
+  display: none;
+}
+#check1 {
+  display: none;
+}
+header .menu .item #check1:checked ~ .drop {
+  display: block;
+}
+header .menu .item .nemelt {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  background-color: aqua;
+  right: 65px;
+  display: none;
+}
+#check {
+  display: none;
+}
+header .menu .item #check:checked ~ .nemelt {
+  display: block;
+}
+header .menu .item i {
+  color: grey;
+  font-size: large;
+}
+main {
+  width: 100%;
+}
+main .container {
+  width: 77%;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+main .container .zurag {
+  width: 260px;
+  height: 200px;
+  background-color: aqua;
+  border-radius: 10px;
+}
+main .container .zurag img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+main .darah {
+  width: 77%;
+  height: 40px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .darah p {
+  color: grey;
+}
+main .banner {
+  width: 65%;
+  height: 180px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: aqua;
+}
+main .banner img {
+  width: 100%;
+  height: 100%;
+}
+main .container2 {
+  width: 77%;
+  margin: auto;
+}
+main .container2 .dotor {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+main .container2 .dotor .guuh {
+  width: 200%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+main .container2 .photo {
+  width: 165px;
+  height: 280px;
+  margin-top: 20px;
+  background-color: aqua;
+  border-radius: 10px;
+  position: relative;
+}
+main .container2 .photo .uusgalt {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(255, 255, 255, 0.7)
+  );
+  top: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  display: none;
+}
+main .container2 .photo .uusgalt p {
+  color: black;
+  margin-left: 5px;
+}
+main .container2 .photo:hover .uusgalt {
+  display: flex;
+  align-items: flex-end;
+}
+main .container2 p {
+  color: grey;
+  font-size: large;
+  margin-top: 20px;
+}
+main .container2 .dotor .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.container4 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+.container4 .dotor {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+.container4 .dotor .zurag {
+  width: 23%;
+  margin: 5px 1%;
+  position: relative;
+}
+.container4 .dotor .zurag .text {
+  width: 100%;
+  height: 97.8%;
+  position: absolute;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(99, 88, 88, 0.7));
+  border-radius: 10px;
+}
+.container4 .dotor .zurag .text p {
+  color: white;
+  margin-left: 5px;
+  margin-top: 170px;
+  transition: all 1s;
+  font-family: 'Sacramento', cursive;
+}
+.container4 .dotor .zurag img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+.container4 .dotor .zurag .text:hover p {
+  color: blue;
+  transition: all 1s;
+}
+
+.container5 {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container5 .durvuljin {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  transform: rotate(40deg);
+  transition: all 1s inherit;
+  /* transform: scalex(2);
+  transform: rotate(45deg);
+  transition: all 1s; */
+}
+
+.big {
+  width: 77%;
+  height: fit-content;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.big .zrg {
+  width: 23%;
+  height: 200px;
+  margin: 10px 1%;
+  border-radius: 10px;
+}
+.big .zrg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+@media (max-width: 1360px) {
+  .big .zrg {
+    width: 30%;
+  }
+}
+@media (max-width: 1000px) {
+  .big .zrg {
+    width: 48%;
+  }
+}
+@media (max-width: 640px) {
+  .big .zrg {
+    width: 100%;
+    height: 280px;
+  }
+}
+@media (max-width: 1100px) {
+  .container4 .dotor .zurag {
+    width: 48%;
+  }
+}
+@media (max-width: 600px) {
+  .container4 .dotor .zurag {
+    width: 100%;
+  }
+  .container4 .dotor .zurag img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 1072px) {
+  main .container2 .dotor .guuh {
+    width: 250%;
+  }
+}
+
+@media (max-width: 1000px) {
+  main .container2 .dotor .guuh {
+    width: 290%;
+  }
+}
+@media (max-width: 850px) {
+  main .container2 .dotor .guuh {
+    width: 320%;
+  }
+}
+@media (max-width: 750px) {
+  main .container2 .dotor .guuh {
+    width: 350%;
+  }
+}
+@media (max-width: 650px) {
+  main .container2 .dotor .guuh {
+    width: 400%;
+  }
+}
+@media (max-width: 560px) {
+  main .container2 .dotor .guuh {
+    width: 460%;
+  }
+}
+@media (max-width: 480px) {
+  main .container2 .dotor .guuh {
+    width: 520%;
+  }
+}
+@media (max-width: 380px) {
+  main .container2 .dotor .guuh {
+    width: 560%;
+  }
+}
+@media (max-width: 320px) {
+  main .container2 .dotor .guuh {
+    width: 660%;
+  }
+}
+.tommm {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  background-color: blue;
+}
+
+.TOM {
+  width: 77%;
+  height: fit-content;
+  margin: auto;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, 275px);
+  grid-template-rows: repeat(3, 200px);
+}
+.TOM .photo {
+  background-color: aqua;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+@media (max-width: 1445px) {
+  .TOM {
+    /* display: grid; */
+    grid-template-columns: 270px 270px 270px;
+    grid-template-rows: 200px 200px 200px 200px;
+  }
+}
+@media (max-width: 1070px) {
+  .TOM {
+    grid-template-columns: 300px 300px;
+    grid-template-rows: repeat(6, 200px);
+  }
+}
+@media (max-width: 780px) {
+  .TOM {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(12, 230px);
+  }
+}
